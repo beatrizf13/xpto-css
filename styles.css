@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  text-rendering: optimizelegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  background: #282a36;
+  color: #f8f8f8;
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: #f8f8f8;
+}
+
+h2 {
+  text-align: center;
+  border-bottom: 1px solid #282a36;
+  margin-bottom: 20px;
+  font-size: 44px;
+}
+
+header > ul > li > a {
+  color: #f8f8f8;
+  padding: 5px;
+}
+
+header > ul > li > a:hover {
+  border-radius: 5px;
+  background: #f8f8f8;
+  color: #282a36;
+}
+
+header {
+  background: #44475a;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header > div > a {
+  display: flex;
+}
+
+header img {
+  width: 60px;
+  margin: 10px;
+}
+
+header h1 {
+  margin-top: 22px;
+}
+
+header > ul {
+  float: right;
+  list-style: none;
+  display: flex;
+  padding: 10px;
+  margin-top: 12px;
+}
+
+header > ul > li {
+  padding: 5px;
+}
+
+main#home {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  main#home {
+    flex-direction: column;
+  }
+}
+
+main#home > div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+main#home > div > div {
+  margin: 20px;
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+main#home > div > div:first-child {
+  background: #ff79c6;
+}
+
+main#home > div > div:first-child > img {
+  height: 52px;
+  margin: 116px 0;
+}
+
+main#home > div > div:nth-child(2) {
+  background: #bd93f9;
+}
+
+main#home > div > div:nth-child(2) > img {
+  height: 52px;
+  margin: 20px 0;
+}
+
+aside {
+  color: #282a36;
+  display: flex;
+  flex-direction: column;
+}
+
+aside > div {
+  background: #f8f8f8;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 30px;
+}
+
+aside > div:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+aside > div:first-child > input {
+  color: #282a36;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+aside > div:first-child > button {
+  background: #bd93f9;
+  color: #f8f8f8;
+  border: none;
+  border-radius: 2px;
+  padding: 10px;
+}
+
+aside > div:first-child > button:first-of-type {
+  background: #ff79c6;
+}
+
+aside > div:first-child > span {
+  text-align: center;
+  font-size: 12px;
+  padding: 5px 0 20px 0;
+}
+
+aside > div:first-child > img {
+  height: 66px;
+  padding: 10px;
+}
+
+aside > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+aside > div:nth-child(2) a {
+  color: #282a36;
+}
+
+aside > div:nth-child(2) > img {
+  height: 66px;
+  padding: 10px;
+}
+
+footer {
+  background: #44475a;
+  text-align: center;
+  padding: 6px;
+}
+
+footer > span {
+  font-size: 12px;
+}
+
+footer > div {
+  display: flex;
+  justify-content: center;
+}
+
+footer img {
+  height: 22px;
+  margin: 8px;
+}
+
+main#services {
+  padding: 100px;
+}
+
+main#services h3 {
+  margin: 20px;
+}
+
+main#services > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+main#services > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (max-width: 840px) {
+  main#services > div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+main#services img {
+  height: 160px;
+  margin: 10px;
+}
+
+main#services p {
+  font-size: 14px;
+}
+
+main#about {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+}
+
+main#about img {
+  height: 100px;
+  margin-top: 13px;
+}
+
+main#about p {
+  margin-top: 10px;
+  margin-bottom: 80px;
+}
+
+main#about article {
+  display: flex;
+}
+
+main#signUp {
+  display: flex;
+  justify-content: center;
+}
+
+main#signUp h2 {
+  color: #282a36;
+  border: none;
+}
+
+main#signUp > div {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #f8f8f8;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 30px;
+}
+
+main#signUp img {
+  height: 50px;
+  margin: 20px;
+}
+
+main#signUp input {
+  color: #282a36;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0;
+  width: 90%;
+}
+
+main#signUp  button {
+  width: 100px;
+  background: #ff79c6;
+  color: #f8f8f8;
+  border: none;
+  border-radius: 2px;
+  padding: 10px;
+}
